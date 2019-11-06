@@ -7,7 +7,7 @@ window.addEventListener('hashchange', function() {
 
 // Write Javascript code!
 
-const appDiv = document.querySelector('body');
+const appDiv = document.body;
 
 let urlQS = new URLSearchParams(window.location.search);
 let settings = Array.from(urlQS.keys()).map(qs => `<li>${qs}: ${urlQS.get(qs)}</li>`).join('');
