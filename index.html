@@ -1,9 +1,44 @@
 <!doctype html>
 <html>
   <head>
-    <script type="text/javascript" src="https://afrancani.github.io/dummy-app/app.js"></script>
+    <script src="https://iam.humanbrainproject.eu/auth/js/keycloak.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
-    toto
+    <section>
+        <h1>Collab context</h1>
+        <ul>
+            <li>clb-collab-id: <b id="clb-collab-id"></b></li>
+            <li>clb-doc-path: <b id="clb-doc-path"></b></li>
+            <li>clb-doc-name: <b id="clb-doc-name"></b></li>
+            <li>clb-drive-id: <b id="clb-drive-id"></b></li>
+        </ul>
+    </section>
+    <section>
+        <h1>App instance settings</h1>
+        <ul>
+            <li>setting1: <b id="setting1"></b></li>
+            <li>setting2: <b id="setting2"></b></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Hash</h1>
+        <ul>
+            <li>current: <b><span id="hash"></span></b></li>
+            <li><a href="#someValue">#someValue</a></li>
+            <li><a href="#anotherValue">#anotherValue</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>User</h1>
+        <ul>
+            <li>username: <b id="username"></b></li>
+            <li>email: <b id="email"></b></li>
+            <li>name: <b id="name"></b></li>
+            <li>collab role: <b id="collab-role"></b></li>
+            <li>my app roles: <b id="app-roles"></b></li>
+        </ul>
+    </section>
   </body>
 </html>
